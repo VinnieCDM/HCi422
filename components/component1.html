@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Vinnie Durham Design System</title>
+<link rel="shortcut icon" type="image/x-icon" href="Favicon.svg?">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- This is where you put your google font in if applicable --> 
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> --> 
+
+<!-- This is the link to the toggle hamburger -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link  rel="stylesheet"  href="../css/prism.css"/>
+</head>
+<body>
+<div class="d-flex">
+  <nav id="sidebar">
+    <div class="custom-menu">
+      <button type="button" id="sidebarCollapse" class="toggle-btn"> <span class="sr-only">Toggle Menu</span>
+      <div id="nav-icon1" > <span></span> <span></span> <span></span> </div>
+      </button>
+    </div>
+    <div class="p-4 pt-6">
+      <h1><a href="../index.html" class="logo"><img alt="Vinnie Durham Logo" class="logo img-fluid" src="Reverse.svg" width="200"></a></h1>
+      <ul class="list-unstyled components">
+        <li class="active"> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li> <a href="../foundation/type.html">Typography</a> </li>
+            <li> <a href="../foundation/color.html">Color</a> </li>
+            <li> <a href="../foundation/logo.html">Logo</a> </li>
+          </ul>
+        </li>
+        <li> <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+          <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+            <li> <a href="component1.html">Navigation</a> </li>
+            <li> <a href="component2.html">Buttons</a> </li>
+            <li> <a href="component3.html">Cards</a> </li>
+          </ul>
+        </li>
+        <li> <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+          <ul class="collapse list-unstyled" id="PatternsSubmenu">
+            <li> <a href="../patterns/pattern1.html">Pattern 1 - Home</a> </li>
+            <li> <a href="../patterns/pattern2.html">Pattern 2 - Portfolio</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Page Content  -->
+  <div class = "container">
+    <div class = "row p-5 pt-6">
+      <div id="content">
+        <h2>Navigation</h2>
+        <h2>Example - Desktop&nbsp;&nbsp;</h2>
+        <img src="Desktop Navigation.png" alt="Desktop Navigation" width="749" height="89" class="img-fluid"/>
+        <h2>&nbsp;Accessibility Considerations&nbsp;</h2>
+        <p>The navigation bar is made to be responsive using Bootstrap; it should collapse into the hamburger menu at the medium breaking point for the best experience on tablet and mobile. To ensure accessibility b, use the &lt;nav&gt; element in every navbar to identify it as a landmark region for users using assistive technologies.</p>
+        <h2>Usage</h2>
+        <p>The navigation bar persiss across all pages.</p>
+        <!-- Code example - this is what the prism.js and css are for added in this page - replace: all '<' with &lt; and  '>' with &gt; and all quotes with &quot; -->
+        
+        <pre class="language-markup"><code>
+  &#x3C;nav class=&#x22;navbar navbar-expand-lg bg-dark&#x22;&#x3E;
+  &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+    &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;#&#x22;&#x3E;Navbar&#x3C;/a&#x3E;
+    &#x3C;button class=&#x22;navbar-toggler&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#navbarNav&#x22; aria-controls=&#x22;navbarNav&#x22; aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+      &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/button&#x3E;
+    &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;navbarNav&#x22;&#x3E;
+      &#x3C;ul class=&#x22;navbar-nav&#x22;&#x3E;
+        &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+          &#x3C;a class=&#x22;nav-link active&#x22; aria-current=&#x22;page&#x22; href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+          &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Case Studies&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+          &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Resume&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+          &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Portfolio&#x3C;/a&#x3E;
+        &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+            </code>
+        </pre>
+        <!-- Code example --> 
+        
+      </div>
+      <!-- Content  --> 
+    </div>
+    <!-- Row  --> 
+  </div>
+  <!-- Container --> 
+</div>
+<script src="../js/prism.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/popper.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/main.js"></script>
+</body>
+	<!-- Footer -->
+<footer class="page-footer">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="http://vinniecdm.com">Vinnie Durham</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
